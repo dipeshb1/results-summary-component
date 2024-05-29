@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap");
+
+:root {
+  --color-light-red: hsla(0, 100%, 67%, 0.8);
+  --color-orange-yello: hsla(39, 100%, 56%, 0.8);
+  --color-green-teal: hsla(166, 100%, 37%, 0.8);
+  --color-cobalt-blue: hsla(234, 85%, 45%, 0.8);
+
+  --color-light-slate-blue: hsl(252, 100%, 67%);
+  --color-light-royal-blue: hsl(241, 81%, 54%);
+  --color-violet-blue: hsla(256, 72%, 46%, 1);
+  --color-persian-bluue: hsla(241, 72%, 46%, 0);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-pale-blue: hsl(221, 100%, 96%);
+  --color-light-lavender: hsl(241, 100%, 89%);
+  --color-gray-blue: hsl(224, 30%, 27%);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  font-family: "Hanken Grotesk";
+}
+.card {
+  display: flex;
+  margin: 15rem auto;
+  gap: 0;
+  max-width: 75rem;
+  border-radius: 30px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.left {
+  padding: 4rem;
+  background-image: linear-gradient(
+    var(--color-light-slate-blue),
+    var(--color-light-royal-blue)
+  );
+  border-radius: 30px;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 50%;
+}
+.left .heading-2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--color-pale-blue);
+}
+.score {
+  background-image: linear-gradient(
+    var(--color-violet-blue),
+    var(--color-persian-bluue)
+  );
+  border-radius: 50%;
+  font-size: 1.4rem;
+  height: 15rem;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff8a;
+}
+.score span {
+  color: #fff;
+  display: block;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.heading-1 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+.para {
+  font-size: 1.6rem;
+  padding: 0 2.5rem;
+  text-align: center;
+  color: var(--color-light-lavender);
+}
+
+.right {
+  padding: 4rem;
+  width: 50%;
+}
+.right .heading-2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.list {
+  list-style: none;
+  margin-top: 2rem;
+}
+.item {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+}
+.i-1 h3 {
+  color: var(--color-light-red);
+}
+.i-1 {
+  background-color: hsla(0, 100%, 60%, 0.1);
+  border-radius: 8px;
+}
+
+.i-2 h3 {
+  color: var(--color-orange-yello);
+}
+.i-2 {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  border-radius: 8px;
+}
+.i-3 h3 {
+  color: var(--color-green-teal);
+}
+.i-3 {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  border-radius: 8px;
+}
+.i-4 h3 {
+  color: var(--color-cobalt-blue);
+}
+.i-4 {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  border-radius: 8px;
+}
+.item p {
+  color: black;
+}
+.item p span {
+  font-weight: 700;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--color-gray-blue);
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 20px;
+  padding: 1.5rem 0;
+  color: var(--color-white);
+  font-weight: 500;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .card {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 0;
+    height: 100vh;
+  }
+  .left {
+    height: 50vh;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+  }
+  .right {
+    width: 50vh;
+    width: 100%;
+  }
+}
