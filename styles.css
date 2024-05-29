@@ -30,6 +30,10 @@ html {
 }
 body {
   font-family: "Hanken Grotesk";
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card {
   display: flex;
